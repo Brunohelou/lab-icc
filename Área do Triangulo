@@ -1,0 +1,19 @@
+#include<stdio.h>
+
+int main () {
+  float b, h, area;
+  int x=1;
+  while(x==1)
+  {
+    printf ("digite b");
+    scanf("%f", &b);
+    printf("digite h");
+    scanf("%f", &h);
+    area=(b*h)/2;
+    printf ("%.2f", area);
+    printf ("\ndigite 1 para continuar e 0 para encerrar");
+    scanf("%d", &x);
+  }
+  
+  return 0;
+}
