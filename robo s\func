@@ -1,0 +1,59 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+
+   int s1;
+   int s2;
+   int s3;
+   int me;
+   int md;
+
+ while(1) {
+
+ scanf ("%d %d %d", &s1, &s2, &s3);
+
+     if ((s1==0) && (s2==0) && (s3==0)) {
+         me=1;
+         md=1;
+      printf("siga em frente");
+     }
+     if ((s1==1) && (s2==0) && (s3==3)) {
+         me=1;
+         md=1;
+      printf("siga em frente");
+    }
+     if ((s1==1) && (s2==1) &&(s3==1)) {
+        me=0;
+        md=0;
+      printf("Pare");
+     }
+    if ((s1==0) && (s2==1) &&(s3==0)) {
+        me=0;
+        md=0;
+      printf("Pare");
+     }
+     if ((s1==0) && (s2==0) && (s3==1)) {
+        me=0;
+        md=1;
+      printf("A Resposta está na esquerda");
+     }
+     if ((s1==0) && (s2==1) && (s3==1)) {
+        me=0;
+        md=1;
+      printf("A Resposta está na esquerda");
+     }
+     if ((s1==1) && (s2==0) && (s3==0)) {
+        me=1;
+        md=0;
+      printf("A Resposta está na direita");
+     }
+     if ((s1==1) && (s2==1) && (s3==0)) {
+        me=1;
+        md=0;
+      printf("A Resposta está na direita");
+     }
+
+}
+return 0;
+}
